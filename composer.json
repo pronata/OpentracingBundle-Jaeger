@@ -19,7 +19,7 @@
   "require": {
     "php": "^8.0",
     "ext-json": "*",
-    "auxmoney/opentracing-bundle-core": "^1.3",
+    "auxmoney/opentracing-bundle-core": "dev-master",
     "opentracing/opentracing": "^1.0.1",
     "auxmoney/jaeger-php": "^3.0"
   },
@@ -69,6 +69,12 @@
   "config": {
     "allow-plugins": {
       "composer/package-versions-deprecated": true
+    }
+  },
+  "repositories": {
+    "core-php-7": {
+      "type": "vcs",
+      "url": "https://github.com/pronata/OpentracingBundle-core.git"
     }
   }
 }
